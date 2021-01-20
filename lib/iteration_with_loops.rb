@@ -9,9 +9,9 @@ def join_nested_strings(src)
       if src[row_index][element_index].class == String
         string_only = src[row_index][element_index]
       end
+      string_array << string_only
       element_index += 1 
     end
-    string_array << string_only
     row_index += 1
   end
   string_array.join
