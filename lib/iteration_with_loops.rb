@@ -8,8 +8,8 @@ def join_nested_strings(src)
     while element_index < src[row_index].length do
       if src[row_index][element_index].class == String
         string_only = src[row_index][element_index]
+        string_array << string_only
       end
-      string_array << string_only
       element_index += 1 
     end
     row_index += 1
