@@ -7,9 +7,7 @@ def join_nested_strings(src)
     element_index = 0
   end
   while element_index < src[row_index].count do
-    if src[row_index][element_index].select { |element| element.is_a?(String) }
-      string += src[row_index][element_index]
-    end 
+    string += src[row_index][element_index].class 
     element_index += 1 
   end
   row_index += 1
